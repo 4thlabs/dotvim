@@ -14,5 +14,5 @@ let g:ctrlp_prompt_mappings = {
     \ }
 
 let g:onedark_termcolors=256
-colorscheme dracula
+colorscheme onedark
 
