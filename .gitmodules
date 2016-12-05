@@ -12,4 +12,4 @@
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "bundle/dracula-theme"]
 	path = bundle/dracula-theme
-	url = git@github.com:dracula/vim.git
+	url = https://github.com/dracula/vim.git
