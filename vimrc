@@ -13,6 +13,9 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-t>'],
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
+let g:ctrlp_custom_ignore = 'node_modules\|git'
+
+set expandtab ts=2 sw=2 ai
 
 let g:onedark_termcolors=256
 colorscheme onedark
