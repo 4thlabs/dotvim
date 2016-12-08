@@ -17,6 +17,9 @@ let g:ctrlp_custom_ignore = 'node_modules\|git'
 
 set expandtab ts=2 sw=2 ai
 
-let g:onedark_termcolors=256
+" let g:onedark_termcolors=256
+" let g:solarized_termcolors=256
+set background=dark
 colorscheme onedark
 
+inoremap jk <esc>
