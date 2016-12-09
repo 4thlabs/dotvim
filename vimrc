@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
-
+Plug 'joshdick/onedark.vim'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
