@@ -1,4 +1,10 @@
-execute pathogen#infect()
+call plug#begin('~/.vim/plugged')
+
+
+
+call plug#end()
+
+
 filetype plugin indent on
 syntax on
 set backspace=indent,eol,start
