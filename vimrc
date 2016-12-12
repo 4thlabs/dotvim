@@ -2,6 +2,14 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'joshdick/onedark.vim'
 Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'vim-airline/vim-airline'
+Plug 'kien/ctrlp.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer --clang-completer' }
+Plug 'terryma/vim-smooth-scroll'
+Plug 'majutsushi/tagbar'
+Plug 'mkitt/tabline.vim'
 
 call plug#end()
 
@@ -14,7 +22,7 @@ set mouse=a
 set showcmd
 
 let g:nerdtree_tabs_open_on_console_startup=1
-let g:nerdtree_tabs_autofind=1
+" let g:nerdtree_tabs_autofind=1
 let g:ctrlp_switch_buffer = 'et'
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-t>'],
@@ -35,3 +43,5 @@ noremap <silent> <c-u> :call smooth_scroll#up(&scroll/2, 0, 1)<CR>
 noremap <silent> <c-d> :call smooth_scroll#down(&scroll/2, 0, 1)<CR>
 noremap <silent> <c-b> :call smooth_scroll#up(&scroll/2, 0, 2)<CR>
 noremap <silent> <c-f> :call smooth_scroll#down(&scroll/2, 0, 2)<CR>
+
+nmap <F8> :TagbarToggle<CR>
