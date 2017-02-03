@@ -10,6 +10,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer --clang-co
 Plug 'terryma/vim-smooth-scroll'
 Plug 'majutsushi/tagbar'
 Plug 'mkitt/tabline.vim'
+Plug 'mzlogin/vim-markdown-toc'
 
 call plug#end()
 
@@ -29,6 +30,12 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
 let g:ctrlp_custom_ignore = 'node_modules\|git'
+
+let g:ctrlp_working_path_mode='a' " Searching in current path
+
+let NERDTreeChDirMode=2
+
+let g:vmt_auto_update_on_save=0
 
 set expandtab ts=2 sw=2 ai
 
