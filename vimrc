@@ -53,3 +53,9 @@ noremap <silent> <c-f> :call smooth_scroll#down(&scroll/2, 0, 2)<CR>
 
 nmap <F8> :TagbarToggle<CR>
 nmap <F7> :NERDTreeToggle<CR>
+
+if has("gui_running")
+  if has("gui_win32")
+    set guifont=Consolas:h11:cANSI
+  endif
+endif
